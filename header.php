@@ -20,14 +20,14 @@
      <title>Contador</title>
 </head>
 
-<body>
+<body style="background-color: #2c2c2c; color:white;">
     <header>
         <?php if (isset($_SESSION['login'])) {
             echo '
             <div class="collapse" id="navbarToggleExternalContent">
                 
-                <div class="bg-dark p-4">
-                    <h5 class="text-white h4">Sell <span class="text-muted">Tracker</span></h5>
+                <div class="bg p-4" style="background-color: black">
+                    <h5 class="text-white h4" >Sell <span class="text-muted">Tracker</span></h5>
                     <div>
                         <a href="?pagina=cadastros" class="linkMenu">
                                 Cadastrar Vendas
@@ -40,8 +40,8 @@
                     </div>
                 </div>
             </div>
-            <nav class="navbar navbar-dark bg-dark">
-                <div class="container-fluid">
+            <nav class="navbar navbar-dark bg" style="background-color: black">
+                <div class="container-fluid" style="background-color: black; color: black;">
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                     </button>

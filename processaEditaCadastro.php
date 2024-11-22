@@ -4,13 +4,13 @@ include 'db.php';  // Incluindo a conexão com o banco de dados
 
 // Recebe os dados do formulário
 $id = $_POST['id'];
-$titulo = $_POST['titulo'];  // Campo 'titulo'
-$autor = $_POST['autor'];    // Campo 'autor'
-$genero = $_POST['genero'];  // Campo 'genero' - novo campo
+$nome_produto = $_POST['nome_produto'];  // Campo 'nome_produto'
+$nome_cliente = $_POST['nome_cliente'];    // Campo 'nome_cliente'
+$valor = $_POST['valor'];  // Campo 'valor' - novo campo
 
-// Atualiza o livro na tabela 'livros'
+// Atualiza o livro na tabela 'produtos'
 $query = "UPDATE vendas 
-          SET nome_produto='$titulo', nome_cliente='$autor', valor='$genero'
+          SET nome_produto='$nome_produto', nome_cliente='$nome_cliente', valor='$valor'
           WHERE id=$id";
 
 // Executa a consulta

@@ -4,7 +4,7 @@
 $servidor = "localhost";
 $usuario = "root";
 $senha = "";
-$db = "sistemavendas";
+$db = "bd_principal";
 
 // Estabelecendo a conexão
 $conexao = mysqli_connect($servidor, $usuario, $senha, $db);

@@ -18,18 +18,18 @@ while ($linha = mysqli_fetch_array($consultaCadastros)) {
         <input value="<?php echo $linha['id']; ?>" type="hidden" id="id" name="id">
         
         <div class="mb-3">
-            <label for="titulo" class="form-label">Nome do Produto:</label>
-            <input value="<?php echo $linha['nome_produto']; ?>" type="text" class="form-control" id="titulo" name="titulo" required>
+            <label for="nome_produto" class="form-label">Nome do Produto:</label>
+            <input value="<?php echo $linha['nome_produto']; ?>" type="text" class="form-control" id="nome_produto" name="nome_produto" required>
         </div>
         
         <div class="mb-3">
-            <label for="autor" class="form-label">Nome do Cliente:</label>
-            <input value="<?php echo $linha['nome_cliente']; ?>" type="text" class="form-control" id="autor" name="autor" required>
+            <label for="nome_cliente" class="form-label">Nome do Cliente:</label>
+            <input value="<?php echo $linha['nome_cliente']; ?>" type="text" class="form-control" id="nome_cliente" name="nome_cliente" required>
         </div>
         
         <div class="mb-3">
-            <label for="genero" class="form-label">Valor do Produto:</label>
-            <input value="<?php echo $linha['valor']; ?>" type="text" class="form-control" id="genero" name="genero" required>
+            <label for="valor" class="form-label">Valor do Produto:</label>
+            <input value="<?php echo $linha['valor']; ?>" type="text" class="form-control" id="valor" name="valor" required>
         </div>
         
         <br>
